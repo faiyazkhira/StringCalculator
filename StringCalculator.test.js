@@ -16,6 +16,12 @@ test('should return the sum of two numbers', () => {
     expect(add("3,5")).toBe(8);
 });
 
+//handling more than two numbers
+test('should return the sum of two numbers', () => {
+    expect(add("1,2,7")).toBe(10);
+    expect(add("3,5,63")).toBe(71);
+});
+
 //Handling New Lines Between Numbers
 test('should handle new lines between numbers', () => {
     expect(add("1\n2,3")).toBe(6);
