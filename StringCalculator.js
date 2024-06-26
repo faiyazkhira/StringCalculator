@@ -6,7 +6,7 @@ function add(numbers) {
     if (numbers.startsWith("//")) {
         const delimiterEndIndex = numbers.indexOf('\n');
         let delimiterStr = numbers.substring(2, delimiterEndIndex);
-        delimiterStr = delimiterStr.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'); // Escape special characters in delimiter
+        delimiterStr = delimiterStr.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'); // Escape special characters in delimiter.
         delimiter = new RegExp(delimiterStr);
         numbers = numbers.substring(delimiterEndIndex + 1);
     }
